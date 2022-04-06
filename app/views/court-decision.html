@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="/paying-or-receiving" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Have you had a court decision about child maintenance payments in the last 12 months?
+    </h1>{{releaseVersion | log }}
+    <p class="govuk-hint">
+      This type of decision is sometimes called a ’court order’, ’maintenance order’ or ’minute of agreement’. We do not
+      need to know about any court orders for your children’s living arrangements.</p>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="court-decision" name="court-decision" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="court-decision">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="court-decision-2" name="court-decision" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="court-decision-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+    <a href="/contact-us" role="button" draggable="false" class="govuk-button govuk-button"
+      data-module="govuk-button">
+      Continue
+    </a>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-hide-this-page" data-module="govuk-hide-this-page">
+      <a href="https://www.google.com/" role="button" draggable="false"
+        class="govuk-button govuk-button--warning govuk-hide-this-page__button govuk-js-hide-this-page-button"
+        data-module="govuk-button" data-new-tab-url="https://www.cgtn.com/nature/weathermap.html"
+        data-fake-page-title="How to prevent the spread of Coronavirus - GOV.UK">
+        Hide this page
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

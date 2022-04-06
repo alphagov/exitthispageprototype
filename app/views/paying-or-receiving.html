@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="/where-does-the-other-parent-live" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Will you be paying or receiving child maintenance?
+    </h1>{{releaseVersion | log }}
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="paying-or-recieving-cm" name="paying-or-recieving-cm" type="radio"
+              value="paying">
+            <label class="govuk-label govuk-radios__label" for="paying-or-recieving-cm">
+              Paying
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="paying-or-recieving-cm-2" name="paying-or-recieving-cm" type="radio"
+              value="receiving">
+            <label class="govuk-label govuk-radios__label" for="paying-or-recieving-cm-2">
+              Receiving
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <a href="/court-decision" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+      Continue
+      </a>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-hide-this-page" data-module="govuk-hide-this-page">
+      <a href="https://www.google.com/" role="button" draggable="false"
+        class="govuk-button govuk-button--warning govuk-hide-this-page__button govuk-js-hide-this-page-button"
+        data-module="govuk-button" data-new-tab-url="https://www.cgtn.com/nature/weathermap.html"
+        data-fake-page-title="How to prevent the spread of Coronavirus - GOV.UK">
+        Hide this page
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
