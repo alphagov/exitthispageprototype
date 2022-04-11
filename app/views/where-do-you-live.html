@@ -38,10 +38,15 @@ Home – GOV.UK Prototype Kit
         </div>
       </fieldset>
     </div>
+    <form action="/where-does-the-other-parent-live" method="post" novalidate>
 
-    <a href="/where-does-the-other-parent-live" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-      Continue
-      </a>
+      <input type="hidden" name="continue" value="true">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
   </div>
 
   <div class="govuk-grid-column-one-third">

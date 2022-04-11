@@ -36,9 +36,15 @@ Home – GOV.UK Prototype Kit
       </fieldset>
     </div>
 
-    <a href="/where-do-you-live" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-      Continue
-      </a>
+    <form action="/where-do-you-live" method="post" novalidate>
+
+      <input type="hidden" name="continue" value="true">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
   </div>
 
   <div class="govuk-grid-column-one-third">

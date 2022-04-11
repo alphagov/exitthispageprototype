@@ -31,9 +31,15 @@ Home – GOV.UK Prototype Kit
       </fieldset>
     </div>
 
-    <a href="/court-decision" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-      Continue
-      </a>
+    <form action="/court-decision" method="post" novalidate>
+
+      <input type="hidden" name="continue" value="true">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
   </div>
 
   <div class="govuk-grid-column-one-third">

@@ -15,20 +15,23 @@ Home – GOV.UK Prototype Kit
       <fieldset class="govuk-fieldset">
         <div class="govuk-radios" data-module="govuk-radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-does-other-parent-live" name="where-does-other-parent-live" type="radio" value="yes">
+            <input class="govuk-radios__input" id="where-does-other-parent-live" name="where-does-other-parent-live"
+              type="radio" value="yes">
             <label class="govuk-label govuk-radios__label" for="where-does-other-parent-live">
               Yes
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-does-other-parent-live-2" name="where-does-other-parent-live" type="radio" value="no">
+            <input class="govuk-radios__input" id="where-does-other-parent-live-2" name="where-does-other-parent-live"
+              type="radio" value="no">
             <label class="govuk-label govuk-radios__label" for="where-does-other-parent-live-2">
               No
             </label>
           </div>
           <div class="govuk-radios__divider">or</div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="where-does-other-parent-live-6" name="where-does-other-parent-live" type="radio" value="abroad">
+            <input class="govuk-radios__input" id="where-does-other-parent-live-6" name="where-does-other-parent-live"
+              type="radio" value="abroad">
             <label class="govuk-label govuk-radios__label" for="where-does-other-parent-live-6">
               I do not know where the other parent lives
             </label>
@@ -37,9 +40,14 @@ Home – GOV.UK Prototype Kit
       </fieldset>
     </div>
 
-    <a href="/paying-or-receiving" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-      Continue
-      </a>
+    <form action="/paying-or-receiving" method="post" novalidate>
+
+      <input type="hidden" name="continue" value="true">
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+    </form>
   </div>
 
   <div class="govuk-grid-column-one-third">
