@@ -4,8 +4,14 @@
 Home – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "/where-do-you-live",
+    text: "Back"
+  }) }}
+{% endblock %}
+
 {% block content %}
-<a href="/where-do-you-live" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Where does the other parent live?

@@ -4,8 +4,14 @@
 Home – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "/paying-or-receiving",
+    text: "Back"
+  }) }}
+{% endblock %}
+
 {% block content %}
-<a href="/paying-or-receiving" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Have you had a court decision about child maintenance payments in the last 12 months?

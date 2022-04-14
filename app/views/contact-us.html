@@ -4,8 +4,14 @@
 Home – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "/court-decision",
+    text: "Back"
+  }) }}
+{% endblock %}
+
 {% block content %}
-<a href="/court-decision" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">You need to contact us</h1>{{releaseVersion | log }}

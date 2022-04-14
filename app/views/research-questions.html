@@ -4,8 +4,14 @@
 Home – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "/",
+    text: "Back"
+  }) }}
+{% endblock %}
+
 {% block content %}
-<a href="/" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Will you answer a few research questions to help improve the Child Maintenance Service?
