@@ -33,18 +33,14 @@ Home – GOV.UK Prototype Kit
       <p class="govuk-body govuk-!-margin-bottom-0"><a class="govuk-link" href="https://dwpcmg.signvideo.net/">Video relay service for British Sign Language (BSL) users</a></p>
       <p class="govuk-body">Monday to Friday, 9:30am to 3:30pm (excluding bank holidays)</p>
     </div>
+  </div>
 
-  </div>
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-hide-this-page" data-module="govuk-hide-this-page">
-      <a href="https://www.google.com/" role="button" draggable="false"
-        class="govuk-button govuk-button--warning govuk-hide-this-page__button govuk-js-hide-this-page-button"
-        data-module="govuk-button" data-new-tab-url="https://www.cgtn.com/nature/weathermap.html"
-        data-fake-page-title="How to prevent the spread of Coronavirus - GOV.UK">
-        Hide this page
-      </a>
-    </div>
-  </div>
+  {{ govukHideThisPage({
+    text: "Hide this page",
+    currentTabURL: "https://www.google.com/",
+    newTabURL: "https://www.cgtn.com/nature/weathermap.html",
+    fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
+  }) }}
 </div>
 
 {% endblock %}
