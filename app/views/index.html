@@ -9,8 +9,11 @@ Home – GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Get help arranging child maintenance</h1>{{releaseVersion | log }}
-    <p class="govuk-body">
-      This service will give you information about the different options available to make a child maintenance
+    <div class="govuk-inset-text">
+      You can use the ‘Hide this page’ button to quickly exit this website. <a href="/safety-content" class="govuk-link">Find out more
+        about this safety feature and how to stay safe online</a></div>
+
+    <p class="govuk-body">This service will give you information about the different options available to make a child maintenance
       arrangement. These are:
     <ul class="govuk-list govuk-list--bullet">
       <li>making your own arrangement</li>
@@ -22,7 +25,7 @@ Home – GOV.UK Prototype Kit
     <h2 class="govuk-heading-m">Using the Child Maintenance Service</h2>
     <h3 class="govuk-heading-s">If you already have an active case</h3>
     <p class="govuk-body">If you have a case with the same parent you should report a
-        change of circumstances instead of making a new arrangement. You can use this service if you want to set up
+      change of circumstances instead of making a new arrangement. You can use this service if you want to set up
       a new arrangement with a different parent.</p>
 
     <h3 class="govuk-heading-s">Fees</h3>
@@ -65,10 +68,10 @@ Home – GOV.UK Prototype Kit
   </div>
 
   {{ govukHideThisPage({
-    text: "Hide this page",
-    currentTabURL: "https://www.google.com/",
-    newTabURL: "https://www.cgtn.com/nature/weathermap.html",
-    fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
+  text: "Hide this page",
+  currentTabURL: "https://www.google.com/",
+  newTabURL: "https://www.cgtn.com/nature/weathermap.html",
+  fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
   }) }}
 </div>
 {% endblock %}
