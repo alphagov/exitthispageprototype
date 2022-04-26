@@ -50,6 +50,21 @@
   }) }}
 {% endblock %}
 
+{% block skipLink %}
+  {{ super() }}
+  <div data-module="govuk-hide-this-page">
+    {{ govukSkipLink({
+      href: 'https://www.google.com/',
+      text: 'Hide this page',
+      attributes: {
+        'data-new-tab-url': 'https://www.cgtn.com/nature/weathermap.html',
+        'data-fake-page-title': 'How to prevent the spread of Coronavirus - GOV.UK'
+      },
+      classes: 'govuk-js-hide-this-page-button'
+    }) }}
+  </div>
+{% endblock %}
+
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
 {% if useAutoStoreData %}
