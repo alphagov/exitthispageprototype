@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Home – GOV.UK Prototype Kit
+Where do you live?
 {% endblock %}
 
 {% block beforeContent %}
@@ -14,7 +14,7 @@ Home – GOV.UK Prototype Kit
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Where do you live?
+    <h1 class="govuk-heading-l">Where do you live?
     </h1>{{releaseVersion | log }}
 
     <div class="govuk-form-group">
@@ -58,7 +58,7 @@ Home – GOV.UK Prototype Kit
   {{ govukHideThisPage({
     text: "Hide this page",
     currentTabURL: "https://www.google.com/",
-    newTabURL: "https://www.cgtn.com/nature/weathermap.html",
+    newTabURL: "https://www.bbc.co.uk/weather",
     fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
   }) }}
 </div>
