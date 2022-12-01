@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Using ‘Exit this page’ and staying safe online
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+href: "/",
+text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Before you continue</h1>{{releaseVersion | log }}
+
+    <h2 class="govuk-heading-m">You can quickly exit this website.</h2>
+      
+      <p class="govuk-body"> This website uses a safety feature to help you quickly hide the page you’re on. It’s designed to be less noticeable to someone around you than closing the web browser completely.</p>
+
+      <h2 class="govuk-heading-m">Exit this page button</h2>
+
+      <p class="govuk-body">When you’re on a page with the ‘Exit this page’ button, you can click the button or press the ‘Esc’ button on your keyboard 3 times.</p>
+
+      <p class="govuk-body">Using ‘Exit this page’ will take you to <a href="https://www.bbc.co.uk/weather" class="govuk-link">BBC Weather</a> immediately. </p>
+        
+      <p class="govuk-body">‘Exit this page’ does not actually erase your browser history. If you think someone is monitoring what you do online, you should <a href="/safety-content" class="govuk-link">take other precautions</a> to stay safe</p> 
+
+      <form action="/where-do-you-live" method="post" novalidate>
+
+        <input type="hidden" name="continue" value="true">
+  
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+  
+      </form>
+    </div>
+
+
+
+    {{ govukHideThisPage({
+      text: "Exit this page",
+      redirectUrl: "https://www.bbc.co.uk/weather"
+  }) }}
+  
+  </div>
+  {% endblock %}

@@ -9,12 +9,7 @@ Get help arranging child maintenance
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Get help arranging child maintenance</h1>{{releaseVersion | log }}
-    <div class="govuk-inset-text">
-      <h2 class="govuk-heading-s">You can quickly exit this website</h2><br>Use the ‘Hide this page’ button or press
-      ‘Esc’ 3 times. Any information you entered will not be saved.
-      <br><a href="/safety-content" class="govuk-link">Read about this safety feature and how to stay safe online</a>
-    </div>
-
+   
     <p class="govuk-body">This service will give you information about the different options available to make a child
       maintenance arrangement. These are:
     <ul class="govuk-list govuk-list--bullet">
@@ -60,7 +55,7 @@ Get help arranging child maintenance
       We will not share any other information with the other parent unless you ask us to.
     </div>
 
-    <a href="/where-do-you-live" role="button" draggable="false" class="govuk-button govuk-button--start"
+    <a href="/interruption-page" role="button" draggable="false" class="govuk-button govuk-button--start"
       data-module="govuk-button">
       Start now
       <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19"
@@ -68,12 +63,5 @@ Get help arranging child maintenance
         <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
       </svg></a>
   </div>
-
-  {{ govukHideThisPage({
-  text: "Hide this page",
-  currentTabURL: "https://www.google.com/",
-  newTabURL: "https://www.bbc.co.uk/weather",
-  fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
-  }) }}
 </div>
 {% endblock %}

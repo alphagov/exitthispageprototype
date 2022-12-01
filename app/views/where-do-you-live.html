@@ -56,11 +56,10 @@ Where do you live?
   </div>
 
   {{ govukHideThisPage({
-    text: "Hide this page",
-    currentTabURL: "https://www.google.com/",
-    newTabURL: "https://www.bbc.co.uk/weather",
-    fakePageTitle: "How to prevent the spread of Coronavirus - GOV.UK"
-  }) }}
+    text: "Exit this page",
+    redirectUrl: "https://www.bbc.co.uk/weather"
+}) }}
+
 </div>
 
 {% endblock %}
