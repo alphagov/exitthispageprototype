@@ -23,7 +23,7 @@ text: "Back"
 
       <h2 class="govuk-heading-m">Exit this page button</h2>
 
-      <p class="govuk-body">When you’re on a page with the ‘Exit this page’ button, you can click the button or press the ‘Esc’ button on your keyboard 3 times.</p>
+      <p class="govuk-body">When you’re on a page with the ‘Exit this page’ button, you can click the button or press the 'shift' button on your keyboard 3 times.</p>
 
       <p class="govuk-body">Using ‘Exit this page’ will take you to <a href="https://www.bbc.co.uk/weather" class="govuk-link">BBC Weather</a> immediately. </p>
         
@@ -42,7 +42,7 @@ text: "Back"
 
 
 
-    {{ govukHideThisPage({
+    {{ govukExitThisPage({
       text: "Exit this page",
       redirectUrl: "https://www.bbc.co.uk/weather"
   }) }}

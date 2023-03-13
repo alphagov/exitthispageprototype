@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Using ‘Hide this page’ and staying safe online
+Using ‘Exit this page’ and staying safe online
 {% endblock %}
 
 {% block beforeContent %}
 {{ govukBackLink({
-href: "/",
+href: "/interruption-page",
 text: "Back"
 }) }}
 {% endblock %}
@@ -16,35 +16,7 @@ text: "Back"
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Staying safe online</h1>{{releaseVersion | log }}
-    <div class="govuk-inset-text">
-      <h2 class="govuk-heading-s">You can quickly exit this website</h2><br>Use the ‘Hide this page’ button or press
-      ‘Esc’ 3 times. Any information you entered will not be saved.</div>
-
-      <p class="govuk-body">This website uses a safety feature to help you quickly hide the page you’re on. It’s
-        designed
-        to be less noticeable to someone around you than closing the web browser completely.</p>
-
-      <h2 class="govuk-heading-m">Hide this page button</h2>
-
-      <p class="govuk-body">When you’re on a page with the ‘Hide this page’ button, you can click the button or press
-        the
-        ‘Esc’ button on your keyboard 3 times.</p>
-
-      <p class="govuk-body">Using ‘Hide this page’ will make your browser:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>open a new tab and take you to <a href="https://www.bbc.co.uk/weather" class="govuk-link">BBC Weather</a>
-        </li>
-        <li>change the previous tab (with the page you were looking at) to <a href="https://www.google.com/"
-            class="govuk-link">Google search</a></li>
-      </ul>
-
-      <p class="govuk-body">‘Hide this page’ might work differently depending on your browser and device settings.</p>
-
-
-      <p class="govuk-body">Using ‘Hide this page’ does not actually erase your browser history. If you think someone is
-        monitoring what you do online, you should take other precautions to stay safe.</p>
-
-      <h2 class="govuk-heading-m">Ways to stay safe online</h2>
+     <h2 class="govuk-heading-m">Ways to stay safe online</h2>
 
       <p class="govuk-body">It can be easy for someone to see what you’re doing online, especially if you’re using a
         home computer.</p>
@@ -100,12 +72,6 @@ text: "Back"
         <li>Private Window on Safari</li>
       </ul>
 
-    </div>
-
-    {{ govukHideThisPage({
-      text: "Exit this page",
-      redirectUrl: "https://www.bbc.co.uk/weather"
-  }) }}
-  
+    </div> 
   </div>
   {% endblock %}

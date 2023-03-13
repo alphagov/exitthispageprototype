@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@govuk-prototype-kit/step-by-step": "^2.1.0",
-    "govuk-frontend": "github:alphagov/govuk-frontend#b68ad3b1",
+    "govuk-frontend": "github:alphagov/govuk-frontend#a1b8cb5e",
     "govuk-prototype-kit": "^13.0.0",
     "jquery": "^3.6.1",
     "notifications-node-client": "^5.2.3"
